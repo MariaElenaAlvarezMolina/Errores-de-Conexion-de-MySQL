@@ -1,0 +1,50 @@
+  File "C:\Users\Usuario1\Desktop\Bootcamp Coding Dojo\Phyton\Flask_MySQL\CRUD\mysqlconnection.py", line 6
+            # cambiar el usuario y la contraseña según sea necesario
+IndentationError: expected an indented block
+
+// Solución: corregir la indentación
+
+  File "C:\Users\Usuario1\Desktop\Bootcamp Coding Dojo\Phyton\Flask_MySQL\CRUD\mysqlconnection.py", line 13
+                                        autocommit = True)
+    ^
+SyntaxError: invalid non-printable character U+00A0
+
+// Solución: corregir la indentación
+
+  File "C:\Users\Usuario1\Desktop\Errores de Conexión de MySQL\server.py", line 9
+        print(friends)
+    ^
+SyntaxError: invalid non-printable character U+00A0
+
+// Solución: corregir la indentación
+
+  File "C:\Users\Usuario1\Desktop\Errores de Conexión de MySQL\mysqlconnection.py", line 44, in connectToMySQL
+    return MySQLConnection(db)
+NameError: name 'MySQLConnection' is not defined
+
+// Solución: corregir nombre
+
+  File "C:\Users\Usuario1\Desktop\Errores de Conexión de MySQL\friend.py", line 21, in get_all
+    for friend in results:
+TypeError: 'bool' object is not iterable
+
+// Solución: corrección de nombre de variable en método para consultar base de datos
+
+  File "C:\Users\Usuario1\.virtualenvs\Errores_de_Conexión_de_MySQL-0yOzsPC7\lib\site-packages\pymysql\connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhoster' ([Errno 11001] getaddrinfo failed)")
+
+// Solución: corregir nombre de host de conexión local
+
+  File "C:\Users\Usuario1\.virtualenvs\Errores_de_Conexión_de_MySQL-0yOzsPC7\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+// Solución: escribir contraseña de acceso a host de conexión local correcta
+
+  File "C:\Users\Usuario1\Desktop\Errores de Conexión de MySQL\friend.py", line 2, in <module>
+    from mysqlconnection import connectToMySQL
+ImportError: cannot import name 'connectToMySQL' from 'mysqlconnection' (C:\Users\Usuario1\Desktop\Errores de Conexión de MySQL\mysqlconnection.py)
+
+// Solución: creación de instancia de MySQLConnection
+
